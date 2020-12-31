@@ -3,6 +3,9 @@
 This program can be used to keep track of planes at various airports and takeoff & land these planes depending on randomly generated weather conditions.
 This project was created for the purpose of learning Guice for dependency injection.
 
+## Installing Dependencies
+```mvn install```
+
 ## Project Structure
 
 Consists of three main classes:
