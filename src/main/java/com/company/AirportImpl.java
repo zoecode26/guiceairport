@@ -7,6 +7,7 @@ public class AirportImpl extends Airport{
 
     @AssistedInject
     public AirportImpl(@Assisted("name") String name){
+        //Passes these arguments to appropriate airport constructor
         super(100, name);
     }
 

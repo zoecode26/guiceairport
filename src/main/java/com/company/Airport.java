@@ -15,11 +15,13 @@ public class Airport{
         this.name = name;
     }
 
+    //Constructor overloading to provide capacity for airport
     Airport(int capacity, String name){
         this.capacity = capacity;
         this.name = name;
     }
 
+    //Injecting a weather object whose forecast method is called to determine if a plane can land/takeoff
     @Inject
     public void setup(Weather weather){
         this.planes = new ArrayList<Plane>();
@@ -66,7 +68,7 @@ public class Airport{
         }
     }
 
-    public void get_planes(){
+    public void display_planes(){
         System.out.println("PLANES AT " + this.name + ":");
         for (Plane plane : this.planes) {
             System.out.println(plane.getName());
