@@ -37,7 +37,7 @@ public class Airport{
             System.out.println(this.name + " FULL");
         }
         else if (!plane.isAirborne()){
-            System.out.println(plane.getName() + "IS NOT AIRBORNE AND THEREFORE CANNOT LAND");
+            System.out.println(plane.getName() + " IS NOT AIRBORNE AND THEREFORE CANNOT LAND");
         }
         else{
             this.planes.add(plane);
@@ -57,7 +57,7 @@ public class Airport{
             System.out.println(plane.getName() + " NOT AT " + this.name);
         }
         else if (plane.isAirborne()){
-            System.out.println(plane.getName() + "IS AIRBORNE AND THEREFORE CANNOT TAKEOFF");
+            System.out.println(plane.getName() + " IS AIRBORNE AND THEREFORE CANNOT TAKEOFF");
         }
         else{
             this.planes.remove(plane);
