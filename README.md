@@ -12,6 +12,8 @@ Consists of three main classes:
 takeoff methods that take a plane object and a display_planes method to display all the planes currently at that airport. The Airport class is injected with a Weather instance
 allowing the forecast method to be called each time a plane is to takeoff/land to check the conditions are appropriate.
 
+### Constructor Overloading
+
 This project also uses constructor overloading, allowing the user to optionally specify a capacity for the airport. If they only provide a name when creating the airport, the
 capacity will be set to 100. This is carried out in the AirportImpl class, that passes the arguments the user provided to the correct constructor in the airport class. The 
 AirportFactory also has two identically named createAirport methods that both instantiate new Airport objects, one with a user specified capacity, and one with the default 
